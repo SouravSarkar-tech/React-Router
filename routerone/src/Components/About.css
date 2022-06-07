@@ -1,0 +1,70 @@
+.cards h1 {
+    color: rgb(59, 127, 238);
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2.5rem;
+}
+
+.pricing-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.pricing-card {
+    background-color: rgb(217, 217, 42);
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem;
+    width: 275px;
+    min-height: 400px;
+    padding: 1rem .75rem;
+    box-shadow: 1px 2px 10px 1px #333;
+}
+
+.pricing-card .plan {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.pricing-card .description {
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pricing-card>a {
+    background-color: rgb(200, 19, 224);
+    text-decoration: none;
+    color: rgb(240, 231, 231);
+    padding: 10px 25px;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+
+.pricing-card>a:hover {
+    background-color: rgb(34, 211, 143);
+}
+
+.pricing-card .price {
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 10px 0;
+    margin-top: 1.5rem;
+}
+
+.pricing-card .price span {
+    font-size: 1rem;
+}
+
+.pricing-card ul {
+    text-align: left;
+    padding: 0 1rem;
+}
+
+.pricing-card ul li {
+    font-size: .9rem;
+    list-style-type: circle;
+    padding-top: 5px;
+}
