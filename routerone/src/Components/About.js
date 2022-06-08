@@ -1,9 +1,11 @@
 import React from 'react'
+import { Link, Outlet } from 'react-router-dom'
 import './About.css'
 
 
 const About = () => {
   return (
+      <>
     <div className='cards'>
         <div className="pricing-cards">
               <div className="pricing-card">
@@ -66,7 +68,18 @@ const About = () => {
                 </ul>
               </div>
           </div>
+
     </div>
+          <h1>See What Our Clients Say!</h1>
+          <h3>
+              <Link className='link' to = "clientreview">Click Here Please! And Scroll</Link>
+          </h3>
+          <Outlet/>
+
+          </>
+    
+
+    
   )
 }
 

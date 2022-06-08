@@ -1,7 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { useAuth } from '../Components/auth'
 import './NavBar.css'
 const Navbar = () => {
+    const navLinkStyle = ({isActive}) =>{
+       return {
+        fontWeight: isActive ? 'bold' : 'normal',
+        color: isActive ? "rgb(126, 33, 33)" : 'black'
+       }
+    }
+    const auth = useAuth()
   return (
     <div>
       <header>
@@ -11,13 +19,21 @@ const Navbar = () => {
                       <a>Company</a>
               <ul>
                   <li>
-                      <NavLink className='navlink' to = "/">Home</NavLink>
+                      <NavLink style={navLinkStyle} className='navlink' to = "/">Home</NavLink>
                   </li>
                   <li>
-                      <NavLink  className='navlink' to = "/about">About</NavLink>
+                      <NavLink  style={navLinkStyle} className='navlink' to = "/about">About</NavLink>
                   </li>
                   <li>
-                      <NavLink className='navlink' to = "/contact">Contact</NavLink>
+                      <NavLink style={navLinkStyle} className='navlink' to = "/contact">Contact</NavLink>
+                  </li>
+                  <li>
+                      <NavLink style={navLinkStyle} className='navlink' to = "/account">Account</NavLink>
+                  </li>
+                  <li>
+                  {
+                      !auth.user &&  <NavLink style={navLinkStyle} className='navlink' to = "/login">Login</NavLink>
+                  }
                   </li>
               </ul>
               </div>

@@ -1,3 +1,6 @@
+.super {
+    background-color: #e7e29a;
+}
 
 .main-content {
     color: rgb(13, 13, 13);
@@ -7,6 +10,8 @@
     transform: translate(-50%, -50%);
     width: 75%;
     margin-top: 200px;
+    background-color: #a9bf5c;
+    padding: 10px 70px;
 }
 
 .main-content h1 {
@@ -38,6 +43,8 @@
     height: 45px;
     margin-top: 1.5rem;
     text-transform: uppercase;
+    text-align: center;
+    margin-left: 539px;
 }
 
 .gradient-btn:hover {
@@ -45,9 +52,10 @@
 }
 
 .about {
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     margin-top: -90px;
+
 }
 
 .about>h1 {
@@ -57,15 +65,18 @@
 
 .about-sub {
     display: flex;
-    max-width: 800px;
+    width: 1200px;
+    height: 200%;
     margin: 1rem auto;
     text-align: left;
+    background-color: #7bd4cd;
+    padding: 3rem;
 }
 
 .about-sub>img {
     max-height: 250px;
     width: 250px;
-    max-width: 90%;
+    max-width: 100%;
     animation: animateimage 1s linear;
 }
 
@@ -99,20 +110,18 @@
 }
 
 .about-sub .sub-sub-about p {
-    font-size: 14px;
+    font-size: 20px;
 }
 
-.about-sub .gradient-btn {
-    width: 100px;
-    margin-top: 5px;
-    height: 30px;
-    font-size: 15px;
-    padding: 7px;
+h2 {
+    font-size: 30px;
 }
 
 .subscribe {
     text-align: center;
     padding: 3rem 2rem 2rem 2rem;
+    margin-top: -14px;
+    padding-bottom: 4rem;
 }
 
 .subscribe-box {
@@ -122,9 +131,9 @@
 .subscribe-box input {
     max-width: 200px;
     width: 65%;
-    padding: 3px 8px;
+    padding: 7px 17px;
     height: 30px;
-    border-radius:10px;
+    border-radius: 10px;
 
 }
 
@@ -132,8 +141,12 @@
     border: 1 px solid #000;
     border-radius: 10px;
     margin-left: 12px;
-    background-color: #29cb85;
-    height: 40px;
-    padding: 0 1rem;
-    color: #fff;
+    background-image: linear-gradient(to right,
+            #25af18 0%,
+            #8bde1e 51%,
+            #d46917 100%);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 20px;
+    color: rgb(9, 9, 9);
 }

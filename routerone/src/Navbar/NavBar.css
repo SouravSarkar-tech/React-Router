@@ -4,7 +4,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 0 2rem;
-    background-color: rgb(232, 232, 118);
+    background-color: rgb(242, 234, 133);
 }
 
 nav .brand {
@@ -26,7 +26,7 @@ nav .brand a {
 
 nav ul {
     display: flex;
-    margin-left: 900px;
+    margin-left: 700px;
 
 }
 
@@ -43,10 +43,6 @@ nav ul li .navlink {
     transition: .3s ease;
     position: relative;
     font-size: 25px;
-}
-
-nav ul li .navlink:hover {
-    color: rgb(126, 33, 33);
 }
 
 nav ul li .navlink::after {

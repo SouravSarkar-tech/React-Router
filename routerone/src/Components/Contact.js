@@ -10,6 +10,7 @@ const Contact = () => {
 
   return (
     <div className='box'>
+        <h1>Connect With Us!😇</h1>
          <form className="main_form" onSubmit={handleSubmit}>
          <div className="form_mail">
           <label htmlFor="email">Enter Your Email ID :</label>
